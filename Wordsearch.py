@@ -13,7 +13,8 @@ def ColumntoRow(Grid):
     return outlist
 
 def Diagonalise(Grid):
-    """Diagonalises the given grid"""
+    """Diagonalises the given grid
+    Could have compaged all the for loops, but thought I may as well leave it explicit"""
     OutList = ["" for i in range(2*(len(Grid) + len(Grid[0])-1))]
     for RowGrid in range(len(Grid)): #diagonalising starting at left column, down and right
         Column = 0
