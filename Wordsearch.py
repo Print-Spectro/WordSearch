@@ -38,7 +38,7 @@ def Diagonalise(Grid):
             OutList[RowGrid+len(Grid)+len(Grid[0])-1] += Grid[Row][Column]
             Row += 1
             Column -= 1
-    for ColumnGrid in range(len(Grid[0][1:])): #diagonalising starting at top row, down and right
+    for ColumnGrid in range(len(Grid[0][1:])): #diagonalising starting at top row, down and left
         Row = 0
         Column = ColumnGrid + 1
         while Row < len(Grid) and Column >= 0:
